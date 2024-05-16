@@ -1,0 +1,42 @@
+.btn {
+  margin: 30px auto 0;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_prev {
+  margin-right: auto;
+  grid-column: 1;
+  clip-path: polygon(100% 0%, 100% 100%, 0 50%);
+}
+
+.btn_next {
+  margin-left: auto;
+  grid-column: 2;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 60px;
+  border: none;
+  background: #fefefe;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 736px) {
+  .btn {
+    width: 80%;
+  }
+
+  .btn button {
+    width: 40px;
+    height: 50px;
+  }
+}
